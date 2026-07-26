@@ -79,6 +79,7 @@ nav.scrolled{
 .nav-cta{
   background:var(--flame);color:#023401 !important;padding:10px 20px;border-radius:100px;
   font-weight:700;transition:transform .25s,background .25s;
+  text-decoration:none;font-size:14.5px;
 }
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--flame-hot);transform:translateY(-2px)}

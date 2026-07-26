@@ -167,6 +167,8 @@ nav.scrolled{
   }
   #food-shaurma{width:58vw;right:-15%;top:14%;margin-top:0}
   #food-burger{width:58vw;left:-10%;bottom:0}
+  .hero{padding-bottom:48px}
+  .scroll-hint{position:static;transform:none;margin-top:52px}
 }
 .hero h1{text-shadow:0 10px 48px rgba(0,0,0,.6)}
 .hero-eyebrow{

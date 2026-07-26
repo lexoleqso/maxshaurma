@@ -98,6 +98,18 @@ ScrollTrigger.create({
   onUpdate:self=> nav.classList.toggle('scrolled', self.scroll()>70)
 });
 
+/* ---- mobile burger menu ---- */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('nav-links');
+function setMenu(open){
+  navLinks.classList.toggle('open', open);
+  burger.classList.toggle('open', open);
+  nav.classList.toggle('menu-open', open);
+  burger.setAttribute('aria-expanded', open);
+}
+burger.addEventListener('click', ()=> setMenu(!navLinks.classList.contains('open')));
+navLinks.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> setMenu(false)));
+
 /* ---- generic reveals ---- */
 gsap.utils.toArray('section .reveal:not(.why-card):not(.dish)').forEach(el=>{
   gsap.fromTo(el,{y:46,opacity:0},{

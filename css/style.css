@@ -328,6 +328,18 @@ section > *:not(.section-bg){position:relative;z-index:1}
 .dish:hover::before{opacity:1}
 .dish .emoji{font-size:46px;margin-bottom:20px;display:block;filter:drop-shadow(0 8px 16px rgba(0,0,0,.4))}
 .dish h3{font-size:20px;font-weight:700;margin-bottom:8px;position:relative}
+.dish .items{list-style:none;position:relative;margin-top:14px}
+.dish .items li{
+  display:flex;align-items:baseline;justify-content:space-between;gap:14px;
+  padding:9px 0;border-bottom:1px dashed rgba(246,236,221,.12);
+}
+.dish .items li:last-child{border-bottom:none}
+.dish .items .n{color:var(--cream-dim);font-size:14px;line-height:1.5}
+.dish .items .p{
+  font-family:'BPG Mrgvlovani Caps','BPG Mrgvlovani',sans-serif;
+  font-weight:900;font-size:16px;color:var(--gold);white-space:nowrap;
+}
+.dish .items .p small{font-size:11px;font-weight:700;color:var(--cream-dim);margin-left:2px}
 .dish p{color:var(--cream-dim);font-size:14px;line-height:1.65;margin-bottom:22px;position:relative}
 .dish .row{display:flex;align-items:center;justify-content:space-between;position:relative}
 .dish .price{

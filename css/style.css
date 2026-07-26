@@ -334,7 +334,7 @@ section > *:not(.section-bg){position:relative;z-index:1}
   padding:9px 0;border-bottom:1px dashed rgba(246,236,221,.12);
 }
 .dish .items li:last-child{border-bottom:none}
-.dish .items .n{color:var(--cream-dim);font-size:14px;line-height:1.5}
+.dish .items .n{color:var(--cream-dim);font-size:14px;line-height:1.5;text-wrap:balance}
 .dish .items .p{
   font-family:'BPG Mrgvlovani Caps','BPG Mrgvlovani',sans-serif;
   font-weight:900;font-size:16px;color:var(--gold);white-space:nowrap;

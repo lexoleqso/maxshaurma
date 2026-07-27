@@ -82,15 +82,6 @@ if(!reduced){
     modifiers:{x:x=>`${parseFloat(x)%half}px`}});
 }
 
-/* ---- blurred section backgrounds drift on scroll ---- */
-if(!reduced){
-  gsap.utils.toArray('.section-bg img').forEach(img=>{
-    gsap.fromTo(img,{yPercent:-58},{yPercent:-42,ease:'none',
-      scrollTrigger:{trigger:img.closest('section'),start:'top bottom',end:'bottom top',scrub:true}
-    });
-  });
-}
-
 /* ---- nav state ---- */
 const nav = document.getElementById('nav');
 ScrollTrigger.create({
